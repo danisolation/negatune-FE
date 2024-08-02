@@ -17,7 +17,6 @@ import {
 const App = () => (
   <BrowserRouter>
     <Header />
-    <div>dwawdwdwad</div>
     <Routes>
       <Route path="/negatune-FE" element={<HomePage />} />
       {/* <Route path="/titles/:id" component={MangaDetail} />
