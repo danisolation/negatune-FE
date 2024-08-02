@@ -19,7 +19,7 @@ const App = () => (
     <Header />
     <div>dwawdwdwad</div>
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/negatune-FE" element={<HomePage />} />
       {/* <Route path="/titles/:id" component={MangaDetail} />
       <Route path="/chapters/:id" component={ChapterDetail} />
       <Route path="/login" component={LoginPage} />
