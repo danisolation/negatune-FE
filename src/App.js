@@ -17,8 +17,9 @@ import {
 const App = () => (
   <BrowserRouter>
     <Header />
+    <div>dwawdwdwad</div>
     <Routes>
-      <Route path="/home" element={<HomePage />} />
+      <Route path="/" element={<HomePage />} />
       {/* <Route path="/titles/:id" component={MangaDetail} />
       <Route path="/chapters/:id" component={ChapterDetail} />
       <Route path="/login" component={LoginPage} />
