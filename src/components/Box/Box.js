@@ -9,29 +9,19 @@ import { faEye } from "@fortawesome/free-solid-svg-icons";
 const cx = classNames.bind(styles);
 
 function Box({
-  to,
-  ver = false,
-  hori = false,
   style,
   children,
   id,
   className,
-  leftIcon,
-  rightIcon,
   ...passProps
 }) {
   let Comp = "div";
   const props = {
     ...passProps,
   };
-  if (to) {
-    props.to = to;
-    Comp = Link;
-  }
+  
   const classes = cx("wrapper", {
     [className]: className,
-    ver,
-    hori,
   });
   return (
     <Comp id={id} className={classes} {...props}>
