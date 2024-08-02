@@ -1,6 +1,7 @@
 @import "normalize.css";
 :root {
   --primary: linear-gradient(180deg, rgba(244, 237, 237, 0) 0%, #f4eded 33.85%);
+  --black: #000;
   --color-black: #222831;
   --color-white: #fff;
   --text-color: #fff;
@@ -207,14 +208,7 @@ h6 {
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 
-.row>* {
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x)* .5);
-  padding-left: calc(var(--bs-gutter-x)* .5);
-  margin-top: var(--bs-gutter-y);
-}
+
 
 a {
   display: inline-block;
