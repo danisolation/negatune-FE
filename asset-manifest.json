@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/negatune-FE/static/css/main.9a7673d8.css",
-    "main.js": "/negatune-FE/static/js/main.2a8ded5c.js",
+    "main.css": "/negatune-FE/static/css/main.7d839764.css",
+    "main.js": "/negatune-FE/static/js/main.fbac6e35.js",
     "static/js/453.8ab44547.chunk.js": "/negatune-FE/static/js/453.8ab44547.chunk.js",
     "static/media/bgp.png": "/negatune-FE/static/media/bgp.956ca2f297ad75732e59.png",
     "static/media/logo.png": "/negatune-FE/static/media/logo.4fbed7544f09ba4afc78.png",
     "index.html": "/negatune-FE/index.html",
-    "main.9a7673d8.css.map": "/negatune-FE/static/css/main.9a7673d8.css.map",
-    "main.2a8ded5c.js.map": "/negatune-FE/static/js/main.2a8ded5c.js.map",
+    "main.7d839764.css.map": "/negatune-FE/static/css/main.7d839764.css.map",
+    "main.fbac6e35.js.map": "/negatune-FE/static/js/main.fbac6e35.js.map",
     "453.8ab44547.chunk.js.map": "/negatune-FE/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a7673d8.css",
-    "static/js/main.2a8ded5c.js"
+    "static/css/main.7d839764.css",
+    "static/js/main.fbac6e35.js"
   ]
 }
