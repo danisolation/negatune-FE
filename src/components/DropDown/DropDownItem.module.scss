@@ -1,0 +1,23 @@
+.wrapper {
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-grey-light);
+}
+
+.wrapper {
+  width: 46%;
+  display: inline-block;
+}
+
+.wrapper a {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px;
+  color: var(--color-grey-light);
+  text-transform: capitalize;
+}
+
+.wrapper a:hover{
+    color: var(--color-yellow) !important;
+}
