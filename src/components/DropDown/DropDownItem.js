@@ -26,7 +26,7 @@ function DropDownItem({
   });
   return (
     <Comp id={id} className={classes} {...props}>
-      <a href="/negatune-FE/ranking">{item}</a>
+      <Link to="/negatune-FE/ranking">{item}</Link>
     </Comp>
   );
 }

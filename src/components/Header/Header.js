@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import DropDown from "../DropDown/DropDown";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -40,9 +41,9 @@ const Header = () => {
     <header className={cx("header")}>
       <div className={cx("container")}>
         <nav className={cx("navBar")}>
-          <a className={cx("brand")} href="/">
+          <Link className={cx("brand")} to="/negatune-FE">
             <img className={cx("img")} src={images.logo} />
-          </a>
+          </Link>
           <button className={cx("menuToggle")}>&#9776;</button>
           <div className={cx("navDiv")}>
             <ul className={cx("navList")}>

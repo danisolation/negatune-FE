@@ -17,9 +17,9 @@ const HomePage = () => {
           <div className={cx("heading")}>
             <h1>
               Truyện phổ biến
-              <a className={cx("more")} href={"/"}>
+              <Link className={cx("more")} to={"/negatune-FE"}>
                 <span>Xem thêm</span>
-              </a>
+              </Link>
             </h1>
           </div>
           <div className={cx("row")}>
@@ -41,9 +41,9 @@ const HomePage = () => {
           <div className={cx("heading")}>
             <h1>
               Truyện vừa cập nhật
-              <a className={cx("more")} href={"/"}>
+              <Link className={cx("more")} to={"/negatune-FE"}>
                 <span>Xem thêm</span>
-              </a>
+              </Link>
             </h1>
           </div>
           <div className={cx("row")}>

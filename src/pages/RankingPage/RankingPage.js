@@ -17,7 +17,7 @@ const RankingPage = () => {
           <div className={cx("breadcrumbContent")}>
             <ul>
               <li>
-                <a href="/negatune-FE">Trang chủ</a>
+                <Link to="/negatune-FE">Trang chủ</Link>
               </li>
               <li>
                 <a className={cx("active")}>Top Tháng</a>

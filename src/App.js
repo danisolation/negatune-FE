@@ -13,6 +13,7 @@ import {
   Routes,
   useLocation,
   useNavigate,
+  HashRouter
 } from "react-router-dom";
 
 const App = () => (
