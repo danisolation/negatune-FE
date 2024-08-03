@@ -1,0 +1,118 @@
+.breadcrumb {
+    --bs-breadcrumb-padding-x: 0;
+    --bs-breadcrumb-padding-y: 0;
+    --bs-breadcrumb-margin-bottom: 1rem;
+    --bs-breadcrumb-bg: ;
+    --bs-breadcrumb-border-radius: ;
+    --bs-breadcrumb-divider-color: var(--bs-secondary-color);
+    --bs-breadcrumb-item-padding-x: 0.5rem;
+    --bs-breadcrumb-item-active-color: var(--bs-secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--bs-breadcrumb-padding-y) var(--bs-breadcrumb-padding-x);
+    margin-bottom: var(--bs-breadcrumb-margin-bottom);
+    font-size: var(--bs-breadcrumb-font-size);
+    list-style: none;
+    background-color: var(--bs-breadcrumb-bg);
+    border-radius: var(--bs-breadcrumb-border-radius);
+}
+
+.breadcrumb {
+    margin: 0;
+}
+
+.breadcrumbContent {
+    display: block;
+}
+
+.breadcrumbContent ul{
+    margin: 30px 0 0;
+    padding: 0;
+}
+
+.breadcrumbContent li{
+    display: inline-block;
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.breadcrumbContent li a{
+    color: var(--color-grey-light);
+    font-size: 20px;
+}
+
+.breadcrumbContent li a.active, .breadcrumbContent li a:hover{
+    color: var(--color-primary);
+}
+
+.breadcrumb .breadcrumbContent li:first-child::after {
+    content: "/";
+    color: var(--color-dark-grey);
+    font-size: 20px;
+    position: absolute;
+    top: 1px;
+    right: -20px;
+}
+
+.top{
+    margin: 80px 0;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.wrapper {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .wrapper {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+}
+
+@media (min-width: 576px) {
+    .wrapper {
+        margin-left: 16.66666667%;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header/Header";
 import HomePage from "./pages/HomePage/HomePage";
+import RankingPage from "./pages/RankingPage/RankingPage";
 // import MangaDetail from './components/MangaDetail';
 // import ChapterDetail from './components/ChapterDetail';
 // import LoginPage from './components/LoginPage';
@@ -19,6 +20,7 @@ const App = () => (
     <Header />
     <Routes>
       <Route path="/negatune-FE" element={<HomePage />} />
+      <Route path="/negatune-FE/ranking" element={<RankingPage />} />
       {/* <Route path="/titles/:id" component={MangaDetail} />
       <Route path="/chapters/:id" component={ChapterDetail} />
       <Route path="/login" component={LoginPage} />

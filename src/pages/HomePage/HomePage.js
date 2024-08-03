@@ -23,16 +23,16 @@ const HomePage = () => {
             </h1>
           </div>
           <div className={cx("row")}>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
+            <Box />
+            <Box />
+            <Box />
+            <Box />
+            <Box />
+            <Box />
+            <Box />
+            <Box />
+            <Box />
+            <Box />
           </div>
         </div>
       </section>
@@ -47,19 +47,19 @@ const HomePage = () => {
             </h1>
           </div>
           <div className={cx("row")}>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
-            <Box ver/>
+            <Box />
+            <Box />
+            <Box />
+            <Box />
+            <Box />
+            <Box />
+            <Box />
+            <Box />
+            <Box />
+            <Box />
+            <Box />
+            <Box />
+            <Box />
           </div>
         </div>
       </section>
@@ -68,27 +68,27 @@ const HomePage = () => {
           <div className={cx("row")}>
             <div className={cx("top")}>
               <h3>Top Ngày</h3>
-              <Horizontal/>
-              <Horizontal/>
-              <Horizontal/>
-              <Horizontal/>
-              <Horizontal/>
+              <Horizontal />
+              <Horizontal />
+              <Horizontal />
+              <Horizontal />
+              <Horizontal />
             </div>
             <div className={cx("top")}>
               <h3>Top Ngày</h3>
-              <Horizontal/>
-              <Horizontal/>
-              <Horizontal/>
-              <Horizontal/>
-              <Horizontal/>
+              <Horizontal />
+              <Horizontal />
+              <Horizontal />
+              <Horizontal />
+              <Horizontal />
             </div>
             <div className={cx("top")}>
               <h3>Top Ngày</h3>
-              <Horizontal/>
-              <Horizontal/>
-              <Horizontal/>
-              <Horizontal/>
-              <Horizontal/>
+              <Horizontal />
+              <Horizontal />
+              <Horizontal />
+              <Horizontal />
+              <Horizontal />
             </div>
           </div>
         </div>
