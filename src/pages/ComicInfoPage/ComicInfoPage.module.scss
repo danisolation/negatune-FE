@@ -1,0 +1,280 @@
+.breadcrumb {
+  --bs-breadcrumb-padding-x: 0;
+  --bs-breadcrumb-padding-y: 0;
+  --bs-breadcrumb-margin-bottom: 1rem;
+  --bs-breadcrumb-bg: ;
+  --bs-breadcrumb-border-radius: ;
+  --bs-breadcrumb-divider-color: var(--bs-secondary-color);
+  --bs-breadcrumb-item-padding-x: 0.5rem;
+  --bs-breadcrumb-item-active-color: var(--bs-secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--bs-breadcrumb-padding-y) var(--bs-breadcrumb-padding-x);
+  margin-bottom: var(--bs-breadcrumb-margin-bottom);
+  font-size: var(--bs-breadcrumb-font-size);
+  list-style: none;
+  background-color: var(--bs-breadcrumb-bg);
+  border-radius: var(--bs-breadcrumb-border-radius);
+}
+
+.breadcrumb {
+  margin: 0;
+}
+
+.breadcrumbContent {
+  display: block;
+}
+
+.breadcrumbContent ul {
+  margin: 30px 0 0;
+  padding: 0;
+}
+
+.breadcrumbContent li {
+  display: inline-block;
+  position: relative;
+  font-weight: 400;
+  font-size: 20px;
+  margin-right: 30px;
+}
+
+.breadcrumbContent li a {
+  color: var(--color-grey-light);
+  font-size: 20px;
+}
+
+.breadcrumbContent li a.active,
+.breadcrumbContent li a:hover {
+  color: var(--color-primary);
+}
+
+.breadcrumb .breadcrumbContent li:first-child::after {
+  content: "/";
+  color: var(--color-dark-grey);
+  font-size: 20px;
+  position: absolute;
+  top: 1px;
+  right: -20px;
+}
+
+.top {
+  margin: 80px 0;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.colLeft {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .colMdLeft {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+}
+
+@media (min-width: 768px) {
+  .colMdLeft {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+}
+
+@media (min-width: 992px) {
+  .colLeft {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+}
+
+@media (min-width: 992px) {
+  .colMd {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+.trailerBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.animeBtn {
+  border-radius: 10px;
+  font-weight: 500;
+  height: auto;
+  text-align: center;
+  transition: var(--transition);
+  position: relative;
+  z-index: 1;
+  border-right: none;
+  background: var(--color-black-light);
+  font-family: MTO;
+}
+
+span {
+  display: inline-block;
+  letter-spacing: 1.5px;
+}
+
+.trailerContent {
+  h1,
+  h2 {
+    font-family: MTO;
+    font-size: 35px;
+    color: var(--color-white);
+    margin-bottom: 0;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    display: block;
+    color: var(--color-grey-light);
+    margin-bottom: 5px;
+
+    span {
+      color: var(--color-white);
+    }
+
+    a,
+    b {
+      color: var(--color-primary);
+    }
+  }
+
+  .lightText {
+    font-weight: 400;
+    font-size: 25px;
+    display: inline-block;
+    color: var(--color-grey-light);
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  h3 {
+    font-size: 25px;
+    color: var(--color-white);
+  }
+
+  a {
+    font-size: 17px;
+  }
+}
+
+.animeBtn.btnDark {
+  padding: 5px 10px;
+  border: 2px solid var(--color-purple);
+  border-radius: 8px;
+  color: var(--color-white);
+}
+
+.animeBtn.btnDark:hover {
+  background: var(--color-purple);
+  color: var(--color-white);
+}
+
+.animeBtn.btnDark.borderChange {
+  border: 2px solid var(--color-primary);
+}
+
+.animeBtn.btnDark.borderChange:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.chapterList {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    width: 25%;
+    text-align: left;
+  }
+
+  a:hover {
+    color: var(--color-primary);
+  }
+
+  p {
+    width: 20%;
+    text-align: right;
+    margin-right: 5px;
+    font-size: 12px;
+  }
+
+  span {
+    width: 40%;
+    text-align: left;
+    font-size: 15px;
+  }
+}
+
+.newChap {
+  text-align: left;
+  width: 10vw;
+  p {
+    color: red;
+  }
+}
+
+.release {
+  .smallTitle {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--color-white);
+    margin-bottom: 20px;
+  }
+
+  h5 {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-white);
+    margin-bottom: 0;
+    padding-top: 15px;
+
+    span {
+      float: right;
+      color: var(--color-grey-light);
+    }
+  }
+
+  hr {
+    width: 100%;
+    height: 1px;
+    color: var(--color-dark-grey);
+    opacity: 1;
+    margin: 8px 0;
+  }
+}
+
+.chapterListContainer {
+  max-height: 400px;
+  overflow-y: auto;
+}

@@ -7,35 +7,71 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import DropDown from "../DropDown/DropDown";
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
 const Header = () => {
-  const [show, setShow] = useState(false);
-  const dropDownRef = useRef(null);
+  const [showRank, setShowRank] = useState(false);
+  const [showCate, setShowCate] = useState(false);
+  const dropDownRefRank = useRef(null);
+  const dropDownRefCate = useRef(null);
+  const location = useLocation();
 
-  const handleClick = () => {
-    setShow(!show);
+  const handleClickRank = () => {
+    setShowRank(!showRank);
   };
 
-  const handleClickOutside = (event) => {
-    if (dropDownRef.current && !dropDownRef.current.contains(event.target)) {
-      setShow(false);
+  const handleClickCate = () => {
+    setShowCate(!showCate);
+  };
+
+  const handleClickOutsideRank = (event) => {
+    if (
+      dropDownRefRank.current &&
+      !dropDownRefRank.current.contains(event.target)
+    ) {
+      setShowRank(false);
+    }
+  };
+
+  const handleClickOutsideCate = (event) => {
+    if (
+      dropDownRefCate.current &&
+      !dropDownRefCate.current.contains(event.target)
+    ) {
+      setShowCate(false);
     }
   };
 
   useEffect(() => {
-    if (show) {
-      document.addEventListener("mousedown", handleClickOutside);
+    setShowCate(false);
+    setShowRank(false);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    if (showRank) {
+      document.addEventListener("mousedown", handleClickOutsideRank);
     } else {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutsideRank);
     }
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutsideRank);
     };
-  }, [show]);
+  }, [showRank]);
+
+  useEffect(() => {
+    if (showCate) {
+      document.addEventListener("mousedown", handleClickOutsideCate);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutsideCate);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutsideCate);
+    };
+  }, [showCate]);
 
   return (
     <header className={cx("header")}>
@@ -50,17 +86,23 @@ const Header = () => {
               <li className={cx("navItem")}>
                 <Button href="#">Theo Dõi</Button>
               </li>
-              <li className={cx("navItem")} ref={dropDownRef}>
-                <Button onClick={handleClick} href="#">
+              <li className={cx("navItem")} ref={dropDownRefRank}>
+                <Button onClick={handleClickRank} href="#">
                   Xếp Hạng
                 </Button>
                 <DropDown
-                  className={show ? "show" : ""}
+                  className={showRank ? "show" : ""}
                   items={["top all", "top tháng", "top tuần", "top ngày"]}
                 />
               </li>
-              <li className={cx("navItem")}>
-                <Button href="#">Thể Loại</Button>
+              <li className={cx("navItem")} ref={dropDownRefCate}>
+                <Button onClick={handleClickCate} href="#">
+                  Thể Loại
+                </Button>
+                <DropDown
+                  className={showCate ? "show" : ""}
+                  items={["top all", "top tháng", "top tuần", "top ngày"]}
+                />
               </li>
             </ul>
             <form>
