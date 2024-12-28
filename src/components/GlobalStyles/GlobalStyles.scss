@@ -242,6 +242,10 @@ h6 {
   }
 }
 
+.m0 {
+  margin: 0 !important;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -430,4 +434,53 @@ b {
 .fas {
   font-family: Font Awesome\5 Pro;
   font-weight: 900;
+}
+
+@media (min-width: 576px) {
+  .colSm8 {
+      flex: 0 0 auto;
+      width: 66.66666667%;
+  }
+}
+
+@media (min-width: 576px) {
+  .offsetSm2 {
+      margin-left: 16.66666667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .colMd6 {
+      flex: 0 0 auto;
+      width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .offsetMd3 {
+      margin-left: 25%;
+  }
+}
+
+@media (min-width: 992px) {
+  .colLg4 {
+      flex: 0 0 auto;
+      width: 33.33333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .offsetLg0 {
+      margin-left: 0;
+  }
+}
+
+.mt3 {
+  margin-top: 1rem !important;
+}
+
+@media (min-width: 992px) {
+  .mtLg0 {
+      margin-top: 0 !important;
+  }
 }

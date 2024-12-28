@@ -41,6 +41,13 @@ const listChapter = [
   },
 ];
 
+const sameCategory = [{
+  img: images.bgp,
+  title: 'anime',
+  latestChap: '20',
+  country: 'Trung Quốc'
+}]
+
 const ComicInfoPage = () => {
   return (
     <>
@@ -152,7 +159,7 @@ const ComicInfoPage = () => {
               <h3 className={cx("smallTitle")}>danh sách chương</h3>
               <div className={cx("chapterListContainer")}>
                 {listChapter.map((chapter, index) => (
-                  <div>
+                  <div key={index}>
                     <h5 className={cx("chapterList")}>
                       <a href="#">Chap {chapter.name}</a>
                       <div className={cx("newChap")}>
@@ -172,6 +179,20 @@ const ComicInfoPage = () => {
                   </div>
                 ))}
               </div>
+            </div>
+            <div
+              className={cx(
+                "colLg4",
+                "colMd6",
+                "colSm8",
+                "offsetLg0",
+                "offsetMd3",
+                "offsetSm2",
+                "mtLg0",
+                "mt3"
+              )}
+            >
+              <h3 className={cx("smallTitle")}>cùng thể loại</h3>
             </div>
           </div>
         </div>
